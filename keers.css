@@ -1,0 +1,42 @@
+.signupform {
+    background-color: pink;
+    padding-bottom: 12px;
+}
+
+.head {
+    color: rgb(10, 5, 5);
+}
+.elements {
+    padding: 12px;
+    border-radius: 15px;
+    background-color: rgba(20, 21, 20, 0.34);
+    margin: 25px;
+}
+
+
+.formname {
+    width: 100%;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+
+.formemail {
+    width: 100%;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+
+.formpwd {
+    width: 100%;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+
+.formrepwd {
+    width: 100%;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+.btn {
+    color: white;
+}

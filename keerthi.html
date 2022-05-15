@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Sign Up</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="keers.css">
+</head>
+<body>
+  <div class="signupform">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center mt-2 ">
+      <div class="elements">
+				<form method="post" action="">
+          <h1 class="head "><b>SIGN UP</b></h1>
+          <hr />
+          <fieldset>
+              <input name="getusername" type="text" id="getusername" class="formname" placeholder="Username"
+              required />
+                  <br />
+              <input name="getemail" type="text" id="email" class="formemail" placeholder="Email"
+                  required type="email" />
+                  <br />
+              <input name="getPassword" type="password" id="getPassword" title="Password must contain minimum 8 characters atleast 1 Alphabet and 1 Number "
+                  class="formpwd" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
+              <br />
+                <input name="getConfirmPassword" type="password" id="getConfirmPassword" class="formrepwd"
+                  placeholder="Confirm Password" />
+                <br />
+              <hr />
+              <input type="submit" name="btnSignup" value="Submit" id="btnSignup" class="btn btn-dark" />
+              </fieldset>
+            </div>
+          </form>
+          <script type="text/javascript">
+            window.onload = function () {
+                var getPassword = document.getElementById("getPassword");
+                var getConfirmPassword = document.getElementById("getConfirmPassword");
+                getPassword.onchange = ConfirmPassword;
+                getConfirmPassword.onkeyup = ConfirmPassword;
+                function ConfirmPassword() {
+                    getConfirmPassword.setCustomValidity("");
+                    if (getPassword.value != getConfirmPassword.value) {
+                       getConfirmPassword.setCustomValidity("Passwords do not match");
+                    }
+                }
+            }
+        </script>
+      </div>    
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
